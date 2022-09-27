@@ -1,0 +1,141 @@
+body{
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Common styles */
+.common-btn{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid #565656;
+    border-radius: 8px;
+}
+/* Navbar styles */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul{ 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav div{   
+  display: inline;
+}
+nav ul li{
+    display: inline;
+    font-size: 18px;
+    padding: 0 0 0 40px;
+}
+nav ul li a {
+    text-decoration: none;
+}
+nav .search-nav{
+    display: flex;
+    align-items: center;
+}
+nav ul li input{
+    width: 300px;
+    height: 30px;
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 8px;
+}
+nav .profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Invitation section */
+.invitation{
+    background-color: #F9FAFF;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Banner section */
+.banner{
+    display: flex;
+    width: 100%;
+}
+.banner .banner-left{
+    min-width: 50vw;
+    background-image: url('../images/banner-left.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.banner .banner-right{
+    min-width: 49vw;
+    background-image: url('../images/banner-right.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.banner .banner-right .banner-right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+.banner .banner-right h1{
+    font-size: 35px;
+    color: #565656;
+}
+.big-fashion{
+    margin-bottom: 0;
+}
+/* Footer styles */
+.footer{
+    background-color: #00071B;
+}
+.footer-logo{
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+}
+.footer-logo img{
+    width: 76px;
+    height: 64px;
+}
+.footer-logo h1{
+    color: white;
+    padding-left: 15px;
+    font-size: 70px;
+    margin: 20px 0;
+}
+.footer-nav{
+    color: white;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 350px;
+}
+.footer-nav ul{
+    list-style-type: none;
+}
+.footer-nav ul .footer-nav-header{
+    font-weight: bold;
+    font-size: 18px;
+}
+.footer-nav input{
+    width: 80%;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 5px;
+}
+.footer .ruler{
+    color: white;
+    padding: 30px 0;
+}
+.social{
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+.social img{
+    padding: 0 10px;
+}
