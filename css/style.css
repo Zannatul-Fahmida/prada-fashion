@@ -49,14 +49,14 @@ nav .profile{
     justify-content: space-between;
 }
 
-/* Invitation section */
+/* Invitation styles */
 .invitation{
     background-color: #F9FAFF;
     padding: 15px 0;
     text-align: center;
 }
 
-/* Banner section */
+/* Banner styles */
 .banner{
     display: flex;
     width: 100%;
@@ -88,6 +88,137 @@ nav .profile{
 }
 .big-fashion{
     margin-bottom: 0;
+}
+/* Trending styles */
+.trending{
+    padding: 0 50px;
+    margin: 50px 0;
+}
+/* Deals styles */
+.deals{
+    padding: 0 50px;
+    margin: 50px 0;
+}
+/* Forever styles */
+.forever{
+    min-height: 100vh;
+    background-image: url('../images/forever21.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.forever h1{
+    font-size: 88px;
+    margin-bottom: 20px;
+}
+.forever h2{
+    font-size: 48px;
+    margin: 0;
+}
+.forever h3{
+    font-size: 42px;
+}
+.forever-btn{
+    color: white;
+    border-color: white;
+}
+/* Categories styles */
+.categories{
+    padding: 0 50px;
+    margin: 50px 0;
+}
+.shop-categories{
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.categories-content{
+    padding: 20px 20px;
+    color: white;
+}
+.categories-content h3{
+    margin: 0;
+}
+.categories-content p{
+    margin: 0;
+}
+.women-pant{
+    height: 670px;
+    background-image: url('../images/categories1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px; 
+    grid-row-start: 1;
+   grid-column-start: 1;
+   grid-row-end: 3;
+   grid-column-end: 3;
+}
+.men-jacket{
+    background-image: url('../images/categories2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px; 
+    grid-row-start: 1;
+   grid-column-start: 3;
+   grid-row-end: 2;
+   grid-column-end: 5; 
+}
+.sweater{
+    background-image: url('../images/categories3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 5;
+}
+.women-tops{
+    background-image: url('../images/categories4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-row-end: 2;
+    grid-column-end: 7;
+}
+.pants{
+    background-image: url('../images/categories5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    grid-row-start: 2;
+    grid-column-start: 5;
+    grid-row-end: 3;
+    grid-column-end: 6;
+}
+.women-jacket{
+    background-image: url('../images/categories6.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    grid-row-start: 2;
+    grid-column-start: 6;
+    grid-row-end: 3;
+    grid-column-end: 7;
+}
+/* Review styles */
+.reviews{
+    padding: 0 50px;
+    margin: 50px 0;
 }
 /* Footer styles */
 .footer{
