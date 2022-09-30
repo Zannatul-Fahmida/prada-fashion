@@ -35,6 +35,7 @@ nav ul li{
 }
 nav ul li a {
     text-decoration: none;
+    color: black;
 }
 nav .search-nav{
     display: flex;
@@ -58,6 +59,10 @@ nav .profile{
     background-color: #F9FAFF;
     padding: 15px 0;
     text-align: center;
+}
+.invitation a{
+    text-decoration: none;
+    color: #00398F;
 }
 
 /* Banner styles */
@@ -100,25 +105,23 @@ nav .profile{
     animation-name: fade;
     animation-duration: 1.5s;
 }
-  
-  @keyframes fade {
+@keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
-  }
-      
+}
 .banner{
     display: flex;
     width: 100%;
 }
 .banner .banner-left{
-    min-width: 50vw;
+    min-width: 50%;
     background-image: url('../images/banner-left.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
 }
 .banner .banner-right{
-    min-width: 49vw;
+    min-width: 50%;
     background-image: url('../images/banner-right.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -152,6 +155,7 @@ nav .profile{
 }
 .discount-price {
     display: flex;
+    padding-bottom: 10px;
 }
 .discount-price h4{
     margin: 0;
@@ -164,9 +168,37 @@ nav .profile{
     color: #0A8200;
     font-weight: bold;
 }
+
 /* Deals styles */
+.deals-card{
+    width: 410px;
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 9px;
+}
+.deals-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Offer styles */
+.offer-card{
+    width: 580px;
+    display: flex;
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 9px;
+}
+.offer-content{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.offer-img{
+    height: 350px;
+}
 
 /* Forever styles */
 .forever{
