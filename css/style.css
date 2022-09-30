@@ -10,6 +10,10 @@ body{
     border: 2px solid #565656;
     border-radius: 8px;
 }
+.content-header{
+    padding: 0 50px;
+    margin: 50px 0;
+}
 /* Navbar styles */
 nav{
     display: flex;
@@ -57,6 +61,51 @@ nav .profile{
 }
 
 /* Banner styles */
+.mySlides {display: none}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #002482;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+      
 .banner{
     display: flex;
     width: 100%;
@@ -90,15 +139,35 @@ nav .profile{
     margin-bottom: 0;
 }
 /* Trending styles */
-.trending{
-    padding: 0 50px;
-    margin: 50px 0;
+.trending-card{
+    width: 410px;
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 9px;
+}
+.trending-card-content{
+    padding-left: 20px;
+}
+.trending-card-content h4{
+    margin: 0;
+}
+.discount-price {
+    display: flex;
+}
+.discount-price h4{
+    margin: 0;
+}
+.old-price{
+    text-decoration: line-through;
+    color: #848484;
+}
+.discount{
+    color: #0A8200;
+    font-weight: bold;
 }
 /* Deals styles */
-.deals{
-    padding: 0 50px;
-    margin: 50px 0;
-}
+
+/* Offer styles */
+
 /* Forever styles */
 .forever{
     min-height: 100vh;
@@ -127,10 +196,6 @@ nav .profile{
     border-color: white;
 }
 /* Categories styles */
-.categories{
-    padding: 0 50px;
-    margin: 50px 0;
-}
 .shop-categories{
     height: 100%;
     display: grid;
@@ -216,9 +281,24 @@ nav .profile{
     grid-column-end: 7;
 }
 /* Review styles */
-.reviews{
-    padding: 0 50px;
-    margin: 50px 0;
+.review-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review{
+    width: 550px;
+    padding: 57px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px grey;
+    text-align: center;
+}
+.rating{
+    margin-top: 20px;
 }
 /* Footer styles */
 .footer{
