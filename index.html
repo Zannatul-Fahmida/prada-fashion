@@ -123,9 +123,13 @@
     <!-- Trending section starts -->
     <section class="content-header">
         <h2>Trending Now</h2>
-        <div class="trending">
-            <div class="trending-card box-shadow">
-                <img src="./images/trending1.png" alt="">
+        <div class="trending-slider-wrapper">
+            <button class="trending-prev" type="button" id="prev" onclick="arrowClick(-1)">&lsaquo;</button>
+            <div class="trending-scroller-wrap">
+                <div class="trending-scroller" id="gallery">
+        <div class="trending trending-scroller-inner" id="wrapper">
+            <div class="trending-card box-shadow trending-item">
+                <img class="trending-img" src="./images/trending1.png" alt="">
                 <div class="trending-card-content">
                 <h4>Womens Denim Jacket</h4>
                 <p>Brand Name 4.4 <img src="./images/filled-star (1).png" alt=""></p>
@@ -136,8 +140,8 @@
                 </div>
             </div>
             </div>
-            <div class="trending-card box-shadow">
-                <img src="./images/trending1.png" alt="">
+            <div class="trending-card box-shadow trending-item">
+                <img class="trending-img" src="./images/trending1.png" alt="">
                 <div class="trending-card-content">
                 <h4>Womens Denim Jacket</h4>
                 <p>Brand Name 4.4 <img src="./images/filled-star (1).png" alt=""></p>
@@ -148,8 +152,8 @@
                 </div>
             </div>
             </div>
-            <div class="trending-card box-shadow">
-                <img src="./images/trending1.png" alt="">
+            <div class="trending-card box-shadow trending-item">
+                <img class="trending-img" src="./images/trending1.png" alt="">
                 <div class="trending-card-content">
                 <h4>Womens Denim Jacket</h4>
                 <p>Brand Name 4.4 <img src="./images/filled-star (1).png" alt=""></p>
@@ -161,29 +165,37 @@
             </div>
             </div>
         </div>
+    </div>
+        </div>
+        <button  class="trending-next" type="button" id="next" onclick="arrowClick(1)">&rsaquo;</button>
+    </div>
     </section>
     <!-- Deals section starts -->
     <section class="content-header">
         <h2>Deals of the Day</h2>
-        <div class="deals">
-        <div class="deals-card box-shadow">
-            <img src="./images/trending1.png" alt="">
+        <div class="deals-slider-wrapper">
+            <button class="deals-prev" type="button" id="prev" onclick="arrowClick1(-1)">&lsaquo;</button>
+            <div class="deals-scroller-wrap">
+                <div class="deals-scroller" id="gallery1">
+        <div class="deals deals-scroller-inner" id="wrapper1">
+        <div class="deals-card box-shadow deals-item">
+            <img class="deals-img" src="./images/trending1.png" alt="">
             <div class="deals-content">
                 <img src="./images/levis.png" alt="">
                 <h2>Best of Styles</h2>
                 <p>Under Rs.799</p>
             </div>
         </div>
-        <div class="deals-card box-shadow">
-            <img src="./images/trending1.png" alt="">
+        <div class="deals-card box-shadow deals-item">
+            <img class="deals-img" src="./images/trending1.png" alt="">
             <div class="deals-content">
                 <img src="./images/levis.png" alt="">
                 <h2>Best of Styles</h2>
                 <p>Under Rs.799</p>
             </div>
         </div>
-        <div class="deals-card box-shadow">
-            <img src="./images/trending1.png" alt="">
+        <div class="deals-card box-shadow deals-item">
+            <img class="deals-img" src="./images/trending1.png" alt="">
             <div class="deals-content">
                 <img src="./images/levis.png" alt="">
                 <h2>Best of Styles</h2>
@@ -191,6 +203,10 @@
             </div>
         </div>
     </div>
+</div>
+</div>
+<button  class="deals-next" type="button" id="next" onclick="arrowClick1(1)">&rsaquo;</button>
+</div>
     </section>
     <!-- Offers section starts -->
     <section class="content-header">
